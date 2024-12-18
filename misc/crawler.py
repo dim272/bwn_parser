@@ -142,4 +142,4 @@ class Crawler:
         response = self.get_url(url)
         number_products = response['metadata']['count']
         logger.debug(f'{number_products} products found')
-        return response['metadata']['count']
+        return number_products
